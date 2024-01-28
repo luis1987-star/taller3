@@ -2,13 +2,13 @@ import requests
 import json
 
 # URL de la API
-api_url = "http://ip-api.com/json/"
+api_url 50,60,70,8050 = "http://ip-api.com/json/" "cambios realizado"
 
 # Definimos los parametros de respuesta que queremos obtener
 parametros = 'status,country,countryCode,region,regionName,city,zip,lat,lon,timezone,isp,org,as,query'
 data = {"fields":parametros}
 
-def ip_scraping(ip=""):
+def ip_scraping (ip=""):
  # Nos conectamos con la API
  res = requests.get(api_url+ip, data=data)
  # Obtenemos y procesamos la respuesta JSON
